@@ -41,32 +41,6 @@ INSERT INTO `actor` VALUES (1,'GUINESS PENELOPE','2011-04-24 13:57:25'),(2,'WAHL
 UNLOCK TABLES;
 
 --
--- Table structure for table `brand`
---
-
-DROP TABLE IF EXISTS `brand`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `brand` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `brandname` varchar(50) DEFAULT NULL,
-  `company` varchar(50) DEFAULT NULL,
-  `branch` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `brand`
---
-
-LOCK TABLES `brand` WRITE;
-/*!40000 ALTER TABLE `brand` DISABLE KEYS */;
-INSERT INTO `brand` VALUES (1,'Maliban','Maliban Ltd','Kurunegala'),(2,'Munchee','CBL','Kurunegala');
-/*!40000 ALTER TABLE `brand` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `category`
 --
 
@@ -754,4 +728,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-07-04  7:05:17
+-- Dump completed on 2022-07-04  7:07:50
